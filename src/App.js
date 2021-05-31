@@ -2,10 +2,14 @@ import './App.css';
 //import componenets
 import Header from"./components/Header";
 import Navbar from "./components/Navbar.js";
+import AboutMe from "./components/AboutMe";
+import Timeline from "./components/Timeline";
+import Stack from "./components/Stack";
 //install and import bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 //install and import particles-js for header animation
 import Particles from "react-particles-js"
+
 
 function App() {
   return (
@@ -32,6 +36,9 @@ function App() {
     />
     <Navbar />
     <Header />
+    <AboutMe />
+    <Timeline />
+    <Stack />
     </>
   );
 }

@@ -17,6 +17,13 @@ body{
 
 nav{
   z-index: 2;
+  font-size: .8rem;
+  
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo{
@@ -29,6 +36,7 @@ nav a.nav-link{
 
 nav ul li{
   text-transform: uppercase;
+  padding-top: 1rem;
 }
 
 .navbar-nav > li > a{
@@ -41,16 +49,25 @@ nav ul li{
 .navbar-brand{
   max-width: 17.25rem;
   padding: 0 !important;
-  height: 6rem !important;
+  padding-top: 1rem !important;
+  color: var(--primary-orange) !important;
+  position: relative;
+  text-transform: uppercase;
+  /**border: 1px solid var(--primary-white);**/
+  /**padding: 0.225rem 0.35rem 0.35rem 0.35rem;**/
+  /**border-radius: 0.4rem;**/
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
   border-top: 0.1875rem Solid var(--primary-orange);
+
 }
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem Solid var(--primary-orange);
 }
+
+
 
 /***************Header*****************/
 
@@ -91,20 +108,17 @@ nav ul li{
 
 /***************Header Button*****************/
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
-
 .btn-main-offer:hover{
   text-decoration: none;
   background-color: var(--primary-hover-red);
+  color: var(--primary-white);
   transition: .3s ease-in-out;
 }
 
 .btn-main-offer {
   border: 2px solid var(--primary-red);
   text-transform: uppercase;
+  text-decoration: none;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
@@ -118,4 +132,105 @@ a:active { text-decoration: none; }
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+/****************About me*******************/
+
+.col-md-5{  
+  display: flex;
+  justify-content: center;  
+}
+
+.profile-pic{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.mb-4{
+  color: var(--primary-orange);
+}
+
+.col-md-7{
+  z-index: 1;
+}
+
+.row{
+  padding-top: 5rem;
+  padding-bottom: 5rem;  
+}
+
+.title-wrapper{
+  text-align: center;
+  text-transform: uppercase; 
+  color: var(--primary-orange); 
+}
+.picture-text-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/**********Timeline************************/
+.timeline-body{
+  background: var(--primary-hover-red);
+}
+
+.timeline-title{
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.vertical-timeline-element-content{
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 1em 3em !important;
+}
+
+.date{
+  color: black;
+}
+
+.button{
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: var(--primary-white);
+  background-color: var(--primary-hover-red); 
+}
+
+.button:hover{
+  color: black;
+}
+
+.button-padding{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/******************Stack***************/
+
+.stack{
+  background: var(--primary-white);  
+  padding-top: 5em;
+  padding-bottom: 5em;  
+      
+}
+.stack-logo{
+  width: 5em;
+  height: 5em;
+  border: 5px solid var(--primary-hover-red);
+  border-radius: 50%;
+  margin-top: -5em;
+  background: var(--primary-white);
+}
+
+.list-bg{
+  background: var(--primary-orange);
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  border-radius: 1em;
+  margin: 0 auto 5em auto;
 }
